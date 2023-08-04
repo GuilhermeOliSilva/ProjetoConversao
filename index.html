@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="conversorMoeda">
+<head>
+    <title>Conversor de Moedas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div ng-controller="conversorController">
+        <label>De: </label>
+        <input type="text" ng-model="fromCurrency">
+        <br>
+        <label>Para: </label>
+        <input type="text" ng-model="toCurrency">
+        <br>
+        <label>Quantia: </label>
+        <input type="number" ng-model="amount">
+        <br>
+        <button ng-click="convert()">Converter</button>
+        <p>Resultado: {{result}}</p>
+    </div>
+</body>
+</html>
